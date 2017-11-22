@@ -1,0 +1,158 @@
+@import "compass/css3";
+/***
+* Project Name
+**/
+@import 'variables';
+/***
+* Base Styles
+**/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    background-color: $bg-body;
+    color: #37345A;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+    30% {
+        transform: scale(1, 0.8) translate(0px, 10px);
+    }
+    75% {
+        transform: scale(1, 1.1) translate(0px, -25px);
+    }
+    100% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+}
+
+
+
+/*header start from here*/
+
+header {
+    height: 180px;
+    background-color: $bg-body;
+    color: black;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    width: 300px;
+    height: 180px;
+}
+
+#logo p {
+    color: white;
+    font-size: 6px;
+    padding-top: 130px;
+    text-transform: uppercase;
+    font-family: Helvetica;
+}
+
+nav {
+    float: right;
+    padding-top: 79px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    padding-right: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Helvetica;
+    font-size: 10pt;
+    /*text-transform: capitalize;*/
+}
+
+nav li a:hover {
+    color: #ffff00;
+    transition: 1s;
+}
+
+#showcase {
+    min-height: 600px;
+    border-bottom: 1px solid lightgray;
+}
+
+.showcase_left {
+    float: left;
+    width: 60%;
+}
+
+#showcase h1 {
+    line-height: 80px;
+    font-size: 62px;
+    font-family: Helvetica;
+    padding-top: 80px;
+    color:white;
+}
+
+#showcase p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.cool {
+    display: inline-block;
+    position: relative;
+    font-size: 62px;
+    color:#ffff00;
+}
+
+
+.showcase_right {
+    min-height: 600px;
+    float: right;
+    width: 40%;
+}
+
+#showcase img {
+    padding-left: 30px;
+    padding-top: 30px;
+    border: 0px solid yellow;
+    border-top-width: 30px;
+    border-left-width: 30px;
+    /*border-bottom-width: 40px;*/
+   width:70%;
+}
+
+#content {
+    background-color: #EEE;
+    height: 400px;
+}
+
+#content p{
+  margin: 0px auto;
+  padding-top: 20px;
+  color: lightgray;
+}
+.vertical-text {
+ writing-mode: vertical-rl;
+}
